@@ -1,0 +1,109 @@
+/* importing Montserrat and Fraunces fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(30, 38%, 92%);
+}
+
+
+.main-container {
+  height: 80vh;
+  width: 800px;
+  max-width: 70%;
+  border: 1px solid hsl(212, 21%, 14%);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.perfume-image {
+  max-width:100%;
+  max-height:100%;
+}
+
+/* right side of container */
+.perfume-details-container {
+  --montserrat: 'Montserrat', sans-serif;
+  --fraunces: 'Fraunces', serif;
+  --dark-gray-blue-color: hsl(228, 12%, 48%);
+  --white-color: hsl(0, 0%, 100%);
+
+  background-color: var(--white-color);
+  max-width:100%;
+  max-height:100%;
+  padding: 2em;
+}
+
+.perfume-text {
+  font-family: var(--montserrat);
+  color: var(--dark-gray-blue-color);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.perfume-info-details {
+  font-family: var(--montserrat);
+  color: var(--dark-gray-blue-color);
+}
+
+.perfume-name {
+  font-family: var(--fraunces);
+}
+
+/* price section start */
+.price {
+  font-family: var(--fraunces);
+  color: hsl(158, 36%, 37%);
+  font-size: 2rem;
+  padding: 0.5em 0;
+}
+
+.price::after {
+  content: '$169.99';
+  margin-top: -25px;
+  margin-left: -25px;
+  margin-top: auto ;
+  position: relative;
+  color: var(--dark-gray-blue-color);
+  text-decoration: line-through;
+  font-size: 1rem;
+}
+/* price section end */
+
+/* button section start */
+.button-cart-text {
+  font-family: var(--montserrat);
+  background-color: hsl(154.05, 40.66%, 17.84%);
+  color: var(--white-color);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 1em 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.button-cart-text::before {
+  content: url(images/icon-cart.svg);
+}
+/* button section end */
+
+/* links */
+.attribution {
+  position: relative;
+}
