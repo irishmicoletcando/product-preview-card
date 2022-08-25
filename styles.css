@@ -11,14 +11,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   background-color: hsl(30, 38%, 92%);
 }
 
 .main-container {
   height: 80vh;
   width: 750px;
-  max-width: 70%;
+  max-width: 60vw;
   border-radius: 20px;
   display: flex;
   justify-content: center;
@@ -27,8 +27,8 @@ body {
 }
 
 .perfume-image {
-  max-width:100%;
-  max-height:100%;
+  width: 450px;
+  max-height: 100%;
 }
 
 /* right side of container */
