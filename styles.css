@@ -62,6 +62,7 @@ body {
   font-family: var(--fraunces);
   padding-bottom: 0.5em;
   font-size: 3rem;
+  font-weight: bold;
   line-height: 3rem;
 }
 /* perfume title end */
@@ -80,6 +81,7 @@ body {
   font-family: var(--fraunces);
   color: var(--dark-cyan-color);
   font-size: 2rem;
+  font-weight: bold;
   padding-bottom: 1em;
 }
 
