@@ -171,10 +171,11 @@ body {
   
   .price {
     padding-bottom: 0.25em;
+    font-size: 1.75rem;
   }
 
   .button-cart-text {
-    padding: 1em;
+    padding: 0.5em;
     margin-bottom: 0.25em;;
   }
 
