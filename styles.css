@@ -17,8 +17,9 @@ body {
 
 .main-container {
   height: 80vh;
+  max-height: 600px;
   width: 750px;
-  max-width: 60vw;
+  max-width: 60%;
   border-radius: 20px;
   display: flex;
   justify-content: center;
@@ -27,8 +28,9 @@ body {
 }
 
 .perfume-image {
-  width: 450px;
-  max-height: 100%;
+  width: 400px;
+  height: 100vh;
+  max-height: 600px;
 }
 
 /* right side of container */
@@ -120,5 +122,5 @@ body {
 /* links */
 .attribution {
   position: absolute;
-  bottom: 40px;
+  bottom: 0;
 }
