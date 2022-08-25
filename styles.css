@@ -17,9 +17,8 @@ body {
 
 .main-container {
   height: 80vh;
-  width: 800px;
+  width: 750px;
   max-width: 70%;
-  border: 1px solid hsl(212, 21%, 14%);
   border-radius: 20px;
   display: flex;
   justify-content: center;
@@ -38,6 +37,7 @@ body {
   --fraunces: 'Fraunces', serif;
   --dark-gray-blue-color: hsl(228, 12%, 48%);
   --white-color: hsl(0, 0%, 100%);
+  --dark-cyan-color: hsl(158, 36%, 37%);
 
   background-color: var(--white-color);
   max-width:100%;
@@ -45,28 +45,40 @@ body {
   padding: 2em;
 }
 
+/* perfume section start */
 .perfume-text {
   font-family: var(--montserrat);
   color: var(--dark-gray-blue-color);
   letter-spacing: 5px;
   text-transform: uppercase;
+  padding: 1em 0;
 }
+/* perfume section end */
 
+/* perfume title start */
+.perfume-name {
+  font-family: var(--fraunces);
+  padding-bottom: 0.5em;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+/* perfume title end */
+
+/* perfume description start */
 .perfume-info-details {
   font-family: var(--montserrat);
   color: var(--dark-gray-blue-color);
+  line-height: 1.8rem;
+  padding-bottom: 2em;
 }
-
-.perfume-name {
-  font-family: var(--fraunces);
-}
+/* perfume description end */
 
 /* price section start */
 .price {
   font-family: var(--fraunces);
-  color: hsl(158, 36%, 37%);
+  color: var(--dark-cyan-color);
   font-size: 2rem;
-  padding: 0.5em 0;
+  padding-bottom: 1em;
 }
 
 .price::after {
@@ -83,7 +95,9 @@ body {
 /* button section start */
 .button-cart-text {
   font-family: var(--montserrat);
-  background-color: hsl(154.05, 40.66%, 17.84%);
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: var(--dark-cyan-color);
   color: var(--white-color);
   border: none;
   outline: none;
@@ -97,9 +111,14 @@ body {
   content: url(images/icon-cart.svg);
   padding-right: 1em;
 }
+
+.button-cart-text:hover {
+  background-color: hsl(154.05, 40.66%, 17.84%);
+}
 /* button section end */
 
 /* links */
 .attribution {
-  display: block;
+  position: absolute;
+  bottom: 40px;
 }
